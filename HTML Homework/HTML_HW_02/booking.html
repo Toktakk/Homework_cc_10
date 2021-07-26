@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking_HTML</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header {
+            background-color:lightseagreen;
+            padding: 30px;
+            text-align: center;
+            text-shadow: 10px 5px lightslategray;
+            font-size: 35px;
+            color: white;
+        }
+
+        .flight {
+            color: lightslategrey;
+            font-size: 20px;
+            padding: 20px;
+            display: inline-block;
+        }
+
+        .passenger {
+            color: lightslategrey;
+            font-size: 20px;
+            padding: 10px;
+            display: inline-block;
+           
+        }
+
+        .currency {
+            color: coral;
+            font-size: 20px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .bottom {
+            padding: 20px;
+            background-color: lightseagreen;
+            text-align: center;
+        }
+
+
+
+    </style>
+  
+</head>
+
+<body>
+
+    <header>
+        <h2>Book Flight in Thailand</h2>
+    </header>
+
+    <form action="/action_page.php">
+
+        <div class="flight">
+
+            <label for="departure">Flying from</label>
+            <br>
+       
+            <select>
+                <option value="Chiang Mai">Chiang Mai</option>
+                <option value="Don Mueang">Don Mueang</option>
+                <option value="Suvarnabhumi">Suvarnabhumi</option>
+                <option value="Phuket">Phuket</option>
+                <option value="Krabi">Krabi</option>
+            </select>
+
+        </div>
+      
+        
+        <div class="flight">
+            <label for="arrival">to</label>
+            <br>
+
+            <select>
+                <option value="Chiang Mai">Chiang Mai</option>
+                <option value="Don Mueang">Don Mueang</option>
+                <option value="Suvarnabhumi">Suvarnabhumi</option>
+                <option value="Phuket">Phuket</option>
+                <option value="Krabi">Krabi</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="flight">
+
+            <label for="Departing">Departing</label>
+            <br>
+            <input type="date"> 
+
+        </div>
+
+        <div class="flight">
+
+            <label for="Returning">Returning</label>
+            <br>
+            <input type="date">         
+
+        </div>
+
+        <br>
+
+        <div class="passenger">
+
+            <label for="Adult">Adult</label>
+            <br>
+            <input type="number" min="1">
+        </div>
+
+        <div class="passenger">
+            <label for="Child">Child</label>
+            <br>
+            <input type="number" min="1">
+
+        </div>
+
+        <div class="passenger">
+
+            <label for="Infant">Infant</label>
+            <br>
+            <input type="number" min="1">
+
+        </div>
+
+        <div class="currency">
+
+            <label for="Currency">Currency</label>
+            <br>
+            <select>
+                <option value="euro">EUR</option>
+                <option value="pond">GBP</option>
+                <option value="dollar">USD</option>
+                <option value="bath">THB</option>
+            </select>
+                  
+        </div>
+
+
+        <br><br>
+
+        <div class="bottom">
+
+          <button type="button">SEARCH</button>
+
+        </div>
+      </form>
+      
+    
+</body>
+</html>
